@@ -167,11 +167,11 @@
           <!-- Intro Background Start -->
           <div class="intro__background intro-bg-03">
             <div class="intro-bg-03__01" data-speed="0.6">
-              <img src="https://dummyimage.com/700x1400/4d4d4d/636363" alt="Designer Duckreed">
+              <div class="img-bg-01"></div>
             </div>
             <div class="intro-bg-03__02" data-speed="0.8">
-              <img src="https://dummyimage.com/265x600/686868/737373" alt="Blayden Decorative Image">
               <div class="intro-bg__shadow"></div>
+              <div class="img-bg-02"></div>
             </div>
           </div>
           <!-- Intro Background End -->
@@ -227,7 +227,7 @@
         <!-- Main Section Intro End -->
 
         <!-- Main Section Media Start -->
-        <div class="main__media media-grid-bottom">
+        <div class="main__media media-grid-bottom" style="padding-bottom: 0px;">
           <div class="container-fluid p-0">
             <div class="row g-0">
 
@@ -237,18 +237,17 @@
                 <!-- Content Block - Image Divider Start -->
                 <div class="content__block">
                   <div class="container-fluid p-0">
-                    <div class="row g-0">
-                      <div class="col-12">
-                        <!-- change the background image in the main.css file - .main-image-2 -->
-                        <div class="divider divider-image-xl main-image-2"></div>
+                    <div class="row g-0 justify-content-center align-items-center">
+                      <div class="col-8">
                         <!-- background video -->
-                        <div class="divider divider-video-xl">
+                        <div class="divider divider-video-xl position-relative">
                           <div class="video-background">
-                            <video class="video" id="inner-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="img/backgrounds/1920x1080-inner-video-poster.webp">
-                              <source type="video/mp4" src="video/video-1.mp4">
-                              <!-- <source type="video/webm" src="video/video-1.webm"> -->
-                              <!-- <source type="video/ogv" src="video/video-1.ogv"> -->
+                            <video class="video" id="inner-video" preload="auto" loop="loop" muted="muted" controls style="width: 100%; height: auto;">
+                              <source src="https://cdn-prod-ccv.adobe.com/TEIZwfZRqTu/rend/TEIZwfZRqTu_576.mp4?hdnts=st%3D1746567206%7Eexp%3D1746826406%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FTEIZwfZRqTu%2Frend%2F*%21%2Fi%2FTEIZwfZRqTu%2Frend%2F*%21%2FTEIZwfZRqTu%2Frend%2F*%21%2FTEIZwfZRqTu%2Fimage%2F*%21%2FTEIZwfZRqTu%2Fcaptions%2F*%7Ehmac%3Dbbc09b8637560eebd67f485d03b380282ba879f1c15520a2031bc3654f4d264c" type="video/mp4">
                             </video>
+                            <div class="video-overlay">
+                              <p class="overlay-text">Este es un texto de ejemplo que aparece al pasar el mouse sobre el video.</p>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1275,7 +1274,7 @@
                           </div>
               
                         <div class="col-12 col-md-8 grid-item about-descr pre-title">
-                          <p class="about-descr__text type-basic-160lh animate-in-up">I believe in the invisible—what is felt before it’s understood. I draw to name the shapeless, design to build small worlds we can live in. My work emerges from the intersection of instinct and observation, of the intimate and the collective. I don’t seek exact answers—I’m drawn to glowing questions, to mistakes that leave a mark, to aesthetics as a form of resistance. My language is visual, but what I try to say resonates beyond the image.
+                          <p class="about-descr__text type-basic-160lh animate-in-up">I believe in the invisible—what is felt before it's understood. I draw to name the shapeless, design to build small worlds we can live in. My work emerges from the intersection of instinct and observation, of the intimate and the collective. I don't seek exact answers—I'm drawn to glowing questions, to mistakes that leave a mark, to aesthetics as a form of resistance. My language is visual, but what I try to say resonates beyond the image.
                           </p>
                           <div class="btn-group about-descr__btnholder animate-in-up">
                             <a class="btn btn-default hover-default" href="#0">
@@ -1311,31 +1310,16 @@
                 <!-- Content Block - Marquee Start -->
                 <div class="content__block no-padding">
                   <!-- Marquee V1 Divider Start -->
-                  <div class="items items--gsap">
-                    <div class="items__container">
-                      <!-- single item -->
-                      <div class="item icon">
-                        <img src="https://dummyimage.com/140x140/4d4d4d/636363" alt="Icon">
+                  <div class="container-fluid" style="padding: 0px 50px">
+                    <div class="row" style="align-items: center; height: 250px;">
+                      <div class="col-12 col-md-4" style="padding: 0px 50px;">
+                        <iframe src="https://www.behance.net/embed/project/214553429?ilo0=1" height="250" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
                       </div>
-                      <!-- single item -->
-                      <div class="item image image-1">
-                        <img src="https://dummyimage.com/1000x1300/4d4d4d/636363" alt="Image">
+                      <div class="col-12 col-md-4" style="padding: 0px 50px;">
+                        <img src="img/portfolio-images/fotografia-2.jpg" alt="Fotografia duckreed montevideo fantasmas" style="height: 252px; width: 100%; margin-top: -5px;" />
                       </div>
-                      <!-- single item -->
-                      <div class="item icon">
-                        <img src="https://dummyimage.com/140x140/4d4d4d/636363" alt="Icon">
-                      </div>
-                      <!-- single item -->
-                      <div class="item image image-2">
-                        <img src="https://dummyimage.com/1000x1300/4d4d4d/636363" alt="Image">
-                      </div>
-                      <!-- single item -->
-                      <div class="item icon">
-                        <img src="https://dummyimage.com/140x140/4d4d4d/636363" alt="Icon">
-                      </div>
-                      <!-- single item -->
-                      <div class="item image image-3">
-                        <img src="https://dummyimage.com/1000x1300/4d4d4d/636363" alt="Image">
+                      <div class="col-12 col-md-4" style="padding: 0px 50px;">
+                        <iframe src="https://www.behance.net/embed/project/225004503?ilo0=1" height="250" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
                       </div>
                     </div>
                   </div>
@@ -1881,8 +1865,8 @@
                 <div class="content__block no-padding section-tagline-title">
                   <div class="items items--gsap">
                     <div class="items__container">
-                      <!-- single item -->
-                      <div class="item item-regular text">
+                          <!-- single item -->
+                          <div class="item item-regular text">
                         <p class="item__text">Follow me</p>
                         <div class="item__image">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
