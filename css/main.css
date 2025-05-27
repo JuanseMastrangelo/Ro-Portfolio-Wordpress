@@ -261,7 +261,7 @@
 }
 
 .portfolio-item-8 {
-  background-image: url("../img/portfolio-images/fotografia-3.jpg");
+  background-image: url("https://dummyimage.com/1600x1200/414141/636363");
 }
 
 .project-image-bg-1 {
@@ -427,13 +427,11 @@ img {
 /* Animations - Backgrounds Start */
 /* ------------------------------------------------*/
 .video-background {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-    max-width: 1179px; /* Establece un ancho máximo si es necesario */
-    max-height: 663px; /* Establece una altura máxima si es necesario */
-    aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto 16:9 */
-    overflow: hidden; /* Asegúrate de que el contenido no se desborde */
-    position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #video-wrapper {
@@ -2658,23 +2656,10 @@ form textarea:required:valid {
   bottom: -300px;
   right: -40px;
 }
-.intro-bg-03__01 .img-bg-01 {
+.intro-bg-03__01 img {
   display: block;
-  background-image: url(../img/portfolio-images/ilustracion-2.png);
-  background-size: cover;
-  width: 700px;
-  height: 1400px;
-  background-repeat: no-repeat;
-  background-position-y: 13.875rem;
-  background-position-x: -12rem;
-}
-.intro-bg-03__02 .img-bg-02 {
-  display: block;
-  background-image: url(../img/portfolio-images/ilustracion-1.png);
-  width: 265px;
-  height: 600px;
-  background-size: 297px;
-  background-position: right;
+  height: 100%;
+  width: auto;
 }
 @media only screen and (min-width: 768px) {
   .intro-bg-03__01 {
@@ -2712,7 +2697,7 @@ form textarea:required:valid {
   .intro-bg-03__01 {
     height: 126vh;
     width: auto;
-    top: -16vh;
+    top: 0vh;
     right: -80px;
   }
 }
@@ -3117,7 +3102,7 @@ form textarea:required:valid {
     padding: 13.5rem 0 0.5rem 0;
   }
   .inner.inner-stack-bottom {
-    padding: 0rem 0 0.5rem 0;
+    padding: 21rem 0 0.5rem 0;
   }
   .inner.inner-type-bottom {
     padding: 21rem 0 4.8rem 0;
@@ -3933,7 +3918,7 @@ form textarea:required:valid {
 @media only screen and (min-width: 1600px) {
   .divider-image-xl,
   .divider-video-xl {
-    height: 800px;
+    height: 650px;
   }
 }
 
@@ -6919,42 +6904,3 @@ form textarea:required:valid {
 /* ------------------------------------------------*/
 /* Features Contact Data End */
 /* ------------------------------------------------*/
-
-.divider-video-xl {
-  position: relative;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.video-background:hover .video-overlay {
-  opacity: 1;
-}
-
-.overlay-text {
-  color: white;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 20px;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}

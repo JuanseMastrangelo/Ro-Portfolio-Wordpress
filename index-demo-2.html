@@ -45,6 +45,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Custom Browser Color End -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   </head>
 
   <body>
@@ -137,8 +140,7 @@
             </clipPath>
             <path class="mxd-cat" d="M29.2,30.8h2.5v2.5v2.5
               h-2.5v-2.5V30.8z M18.4,33.3v2.5h2.5v-2.5v-2.5h-2.5V33.3z M35,18.3v2.5h-2.5v-2.5H35z M30,23.3h2.5v-2.5H30V23.3z M25,23.3h-2.5
-              H20v2.5h2.5H25h2.5H30v-2.5h-2.5H25z M17.5,20.8v2.5H20v-2.5H17.5z M15,18.3v2.5h2.5v-2.5H15z M12.5,23.3v2.5v2.5H15v-2.5v-2.5
-              v-2.5h-2.5V23.3z M10,30.8v2.5H8.4H5.9v2.5h2.5v2.5H5.9v2.5h2.5v2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5h2.5h2.5v-2.5h-2.5h-2.5v-2.5
+              H20v2.5h2.5H25h2.5H30v-2.5h-2.5H25z M17.5,20.8v2.5H20v-2.5H17.5z M15,18.3v2.5h2.5v-2.5H15z M12.5,23.3v2.5v2.5H15v-2.5v-2.5v-2.5h-2.5V23.3z M10,30.8v2.5H8.4H5.9v2.5h2.5v2.5H5.9v2.5h2.5v2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5h2.5h2.5v-2.5h-2.5h-2.5v-2.5
               v-2.5v-2.5h1.7v-2.5v-2.5H10V30.8z M37.5,23.3v-2.5H35v2.5v2.5v2.5h2.5v-2.5V23.3z M44.2,35.8v-2.5h-2.5H40v-2.5v-2.5h-2.5v2.5v2.5
               h1.7v2.5v2.5v2.5h-2.5h-2.5v2.5h2.5h2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5v-2.5h2.5v-2.5h-2.5v-2.5H44.2z"/>
           </g>
@@ -166,11 +168,11 @@
 
           <!-- Intro Background Start -->
           <div class="intro__background intro-bg-03">
-            <div class="intro-bg-03__01" data-speed="0.6">
-              <img src="https://dummyimage.com/700x1400/4d4d4d/636363" alt="Designer Duckreed">
+            <div class="intro-bg-03__01 mt-5 mt-md-0" data-speed="0.6">
+              <img src="/img/portfolio-images/700x1400.png" alt="Designer Duckreed">
             </div>
             <div class="intro-bg-03__02" data-speed="0.8">
-              <img src="https://dummyimage.com/265x600/686868/737373" alt="Blayden Decorative Image">
+              <img src="/img/portfolio-images/265x600.png" alt="Duckreed Rocio Pato Artist">
               <div class="intro-bg__shadow"></div>
             </div>
           </div>
@@ -237,18 +239,13 @@
                 <!-- Content Block - Image Divider Start -->
                 <div class="content__block">
                   <div class="container-fluid p-0">
-                    <div class="row g-0">
-                      <div class="col-12">
-                        <!-- change the background image in the main.css file - .main-image-2 -->
-                        <div class="divider divider-image-xl main-image-2"></div>
+                    <div class="row g-0 justify-content-center align-items-center">
+                      <div class="col-12 col-md-8">
                         <!-- background video -->
-                        <div class="divider divider-video-xl">
+                        <div class="divider divider-video-xl position-relative">
                           <div class="video-background">
-                            <video class="video" id="inner-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="img/backgrounds/1920x1080-inner-video-poster.webp">
-                              <source type="video/mp4" src="video/video-1.mp4">
-                              <!-- <source type="video/webm" src="video/video-1.webm"> -->
-                              <!-- <source type="video/ogv" src="video/video-1.ogv"> -->
-                            </video>
+                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/AU60q00BcCU?si=DxhStxKYgJiwMfn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
                           </div>
                         </div>
                       </div>
@@ -298,7 +295,7 @@
                   <!-- Content Block - H2 Section Title Start -->
                   <div class="content__block pre-stack-block">
                     <div class="block__descr">
-                      <h2 class="reveal-type animate-in-up">Art, desing &<br>some tech magic!</h2>
+                      <h2 class="reveal-type animate-in-up">Art, desing &<br>some tech</h2>
                     </div>
                   </div>
                   <!-- Content Block - H2 Section Title End -->
@@ -307,38 +304,10 @@
                   <div class="content__block">
                     <div class="stack-wrapper">
                         <div class="stack-offset solid-block"></div>
-                        <div class="portfolio-stack">
-                          <!-- portfolio stack single item -->
-                          <div class="stack-item">
-                            <div data-mfp-src="#portfolio-popup-1" class="portfolio-stack__inner portfolio-item-5 popup-trigger">
-                              <div class="portfolio-stack__descr">
-                                <h5 class="portfolio-stack__title dark">PX101 flexible speaker</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- portfolio stack single item -->
-                          <div class="stack-item">
-                            <div data-mfp-src="#portfolio-popup-2" class="portfolio-stack__inner portfolio-item-6 popup-trigger">
-                              <div class="portfolio-stack__descr">
-                                <h5 class="portfolio-stack__title light">Reflection AI project</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- portfolio stack single item -->
-                          <div class="stack-item">
-                            <div data-mfp-src="#portfolio-popup-3" class="portfolio-stack__inner portfolio-item-7 popup-trigger">
-                              <div class="portfolio-stack__descr">
-                                <h5 class="portfolio-stack__title dark">Blayden portfolio template</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- portfolio stack single item -->
-                          <div class="stack-item">
-                            <div data-mfp-src="#portfolio-popup-4" class="portfolio-stack__inner portfolio-item-8 popup-trigger">
-                              <div class="portfolio-stack__descr">
-                                <h5 class="portfolio-stack__title light">Anime style fantasy scenes</h5>
-                              </div>
-                            </div>
+                          <div class="my-tiny-slider">
+                            <div><img src="img/portfolio-images/fotografia-1.jpg" alt="Fotografía 1" style="width:100%;height:100%;object-fit:cover;"></div>
+                            <div><img src="img/portfolio-images/fotografia-2.jpg" alt="Fotografía 2" style="width:100%;height:100%;object-fit:cover;"></div>
+                            <div><img src="img/portfolio-images/fotografia-3.jpg" alt="Fotografía 3" style="width:100%;height:100%;object-fit:cover;"></div>
                           </div>
                         </div>
                       </div>
@@ -1012,10 +981,27 @@
 
                           <!-- Project Block - Title with Image Start -->
                           <div class="project__block no-padding no-margin project-image-bg">
-                            <img class="project-image-bg__portrait" src="https://dummyimage.com/600x800/4d4d4d/636363" alt="Project Illustration">
-                            <img class="project-image-bg__landscape" src="https://dummyimage.com/1920x800/4d4d4d/636363" alt="Project Illustration">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <img src="img/portfolio-images/fotografia-1.jpg" alt="Fotografía 1">
+                                </div>
+                                <div class="swiper-slide">
+                                  <img src="img/portfolio-images/fotografia-2.jpg" alt="Fotografía 2">
+                                </div>
+                                <div class="swiper-slide">
+                                  <img src="img/portfolio-images/fotografia-3.jpg" alt="Fotografía 3">
+                                </div>
+                              </div>
+                              <!-- Flechas de navegación -->
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+                              <!-- Paginación -->
+                              <div class="swiper-pagination"></div>
+                            </div>
                             <div class="project__title">
-                              <h3 class="light">Anime style fantasy scenes</h3>
+                              <h3 class="light">Anime style fantasy scenesasdasdads</h3>
                             </div>
                           </div>
                           <!-- Project Block - Title with Image End -->
@@ -1275,7 +1261,7 @@
                           </div>
               
                         <div class="col-12 col-md-8 grid-item about-descr pre-title">
-                          <p class="about-descr__text type-basic-160lh animate-in-up">I believe in the invisible—what is felt before it’s understood. I draw to name the shapeless, design to build small worlds we can live in. My work emerges from the intersection of instinct and observation, of the intimate and the collective. I don’t seek exact answers—I’m drawn to glowing questions, to mistakes that leave a mark, to aesthetics as a form of resistance. My language is visual, but what I try to say resonates beyond the image.
+                          <p class="about-descr__text type-basic-160lh animate-in-up">I believe in the invisible—what is felt before it's understood. I draw to name the shapeless, design to build small worlds we can live in. My work emerges from the intersection of instinct and observation, of the intimate and the collective. I don't seek exact answers—I'm drawn to glowing questions, to mistakes that leave a mark, to aesthetics as a form of resistance. My language is visual, but what I try to say resonates beyond the image.
                           </p>
                           <div class="btn-group about-descr__btnholder animate-in-up">
                             <a class="btn btn-default hover-default" href="#0">
@@ -1395,8 +1381,8 @@
                           <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
                             <div class="cards__card d-flex flex-column">
                               <div class="cards__descr">
-                                <h3 class="cards__title animate-in-up">Frontend<br>development</h3>
-                                <p class="cards__text type-basic-160lh animate-in-up">I work with HTML/CSS, Framer and WordPress.</p>
+                                <h3 class="cards__title animate-in-up">Video<br>editor</h3>
+                                <p class="cards__text type-basic-160lh animate-in-up">I use Adobe Premiere Pro and After Effects to create engaging videos with motion graphics.</p>
                               </div>
                               <div class="cards__image cards__image-v2 d-flex animate-in-up">
                                 <img src="https://dummyimage.com/1200x1200/4d4d4d/636363" alt="Service/Feature Image">
@@ -1408,7 +1394,7 @@
                             <div class="cards__card d-flex flex-column">
                               <div class="cards__descr">
                                 <h3 class="cards__title animate-in-up">Graphic<br>design</h3>
-                                <p class="cards__text type-basic-160lh animate-in-up">I use Adobe Fresco and Blender to create illustrations and 3D renders.</p>
+                                <p class="cards__text type-basic-160lh animate-in-up">I use Adobe and Blender to create illustrations and 3D renders.</p>
                               </div>
                               <div class="cards__image cards__image-v2 d-flex animate-in-up">
                                 <img src="https://dummyimage.com/1200x1200/4d4d4d/636363" alt="Service/Feature Image">
@@ -1516,15 +1502,14 @@
                               <p class="resume-lines-number__number type-basic-160lh animate-in-up">01.</p>
                             </div>
                             <div class="col-12 col-md-8">
-                              <h4 class="resume-lines-number__title animate-in-up">Drawing Concentration</h4>
+                              <h4 class="resume-lines-number__title animate-in-up">Marketing course</h4>
                             </div>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
-                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2015 - 2016</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">Intensive drawing courses that present the fundamental 
-                            principles of drawing.</p>
-                          <a class="resume-lines-number__source link-small-underline animate-in-up" href="#0" target="_blank">New York Academy of Art</a>
+                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2020</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">Intensive marketing course that provided practical skills and strategic knowledge in branding, digital campaigns, and audience engagement.</p>
+                          <a class="resume-lines-number__source link-small-underline animate-in-up" href="#0" target="_blank"></a>
                         </div>
                       </div>
                       <div class="resume-divider animate-in-up"></div>
@@ -1536,15 +1521,14 @@
                               <p class="resume-lines-number__number type-basic-160lh animate-in-up">02.</p>
                             </div>
                             <div class="col-12 col-md-8">
-                              <h4 class="resume-lines-number__title animate-in-up">UI/UX Design Specialization</h4>
+                              <h4 class="resume-lines-number__title animate-in-up">Primary education</h4>
                             </div>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
-                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2019 - 2021</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">Research, design, and prototype effective, visually-driven 
-                            websites and apps.</p>
-                          <a class="resume-lines-number__source link-small-underline animate-in-up" href="#0" target="_blank">California Institute of Arts</a>
+                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2022 - Present</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I am currently pursuing a Bachelor's degree in Art, Design, and Technology — an innovative program that combines education in all three areas to shape more well-rounded and versatile artists.</p>
+                          <a class="resume-lines-number__source link-small-underline animate-in-up" href="#0" target="_blank">Universidad ORT Uruguay</a>
                         </div>
                       </div>
                       <div class="resume-divider animate-in-up"></div>
@@ -1556,15 +1540,14 @@
                               <p class="resume-lines-number__number type-basic-160lh animate-in-up">03.</p>
                             </div>
                             <div class="col-12 col-md-8">
-                              <h4 class="resume-lines-number__title animate-in-up">UI/UX Designer</h4>
+                              <h4 class="resume-lines-number__title animate-in-up">Drawing</h4>
                             </div>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
-                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2022</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">This cource is about how to complete the design process from 
-                            beginning to end.</p>
-                          <a class="resume-lines-number__source link-small-underline animate-in-up" href="#0" target="_blank">Coursera</a>
+                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">Regularly</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I have taken drawing courses to strengthen my artistic foundations, focusing on techniques such as proportion, shading, and composition to improve both traditional and digital artwork.</p>
+                          <a class="resume-lines-number__source link-small-underline animate-in-up" href="#0" target="_blank"></a>
                         </div>
                       </div>
                       <div class="resume-divider animate-in-up"></div>
@@ -1594,17 +1577,16 @@
                               <p class="resume-lines-number__number type-basic-160lh animate-in-up">01.</p>
                             </div>
                             <div class="col-12 col-md-8">
-                              <h4 class="resume-lines-number__title animate-in-up">Illustrator</h4>
+                              <h4 class="resume-lines-number__title animate-in-up">Community manager</h4>
                             </div>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
-                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2018 - 2019</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I created original images for a range of digital 
+                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2020 - Present</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I I worked as a Community Manager at Programadores Argentina, a large tech community with thousands of followers across multiple platforms. I was responsible for creating and managing content, engaging with the audience, and promoting events and initiatives that support local developers. This role helped me improve my communication and social media strategy skills while staying closely connected to the tech industry.
                             and printed products.</p>
                           <p class="resume-lines-number__source small animate-in-up">
-                            <a class="link-small-underline" href="#0" target="_blank">Creative Mind</a>
-                            agency
+                            <a class="link-small-underline" href="#0" target="_blank">Comunidad Programadores Argentina</a>
                           </p>
                         </div>
                       </div>
@@ -1617,17 +1599,15 @@
                               <p class="resume-lines-number__number type-basic-160lh animate-in-up">02.</p>
                             </div>
                             <div class="col-12 col-md-8">
-                              <h4 class="resume-lines-number__title animate-in-up">Graphic designer</h4>
+                              <h4 class="resume-lines-number__title animate-in-up">Video editor</h4>
                             </div>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
-                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2019 - 2021</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">My job was to create adverts, branding, 
-                            signage and other media products.</p>
+                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2024</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I worked as a video editor for a company that needed a promotional demo to showcase their clinic management software. I created a clear and engaging video that highlighted the software’s main features and benefits, helping them communicate their value to potential clients.</p>
                           <p class="resume-lines-number__source small animate-in-up">
-                            <a class="link-small-underline" href="#0" target="_blank">Moon Light</a>
-                            agency
+                            <a class="link-small-underline" href="#0" target="_blank">AlammoIT</a>
                           </p>
                         </div>
                       </div>
@@ -1640,14 +1620,13 @@
                               <p class="resume-lines-number__number type-basic-160lh animate-in-up">03.</p>
                             </div>
                             <div class="col-12 col-md-8">
-                              <h4 class="resume-lines-number__title animate-in-up">UI/UX designer</h4>
+                              <h4 class="resume-lines-number__title animate-in-up">Graphic designer</h4>
                             </div>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
-                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2021 - now</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I am actively involved in creating user 
-                            interfaces for mobile apps and websites.</p>
+                          <p class="resume-lines-number__date type-basic-160lh animate-in-up">2025</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I designed the new branding and logo for Programadores Argentina’s paid club on Instagram. The goal was to create a modern and recognizable visual identity that reflects the value of the exclusive content and benefits offered to members.</p>
                           <p class="resume-lines-number__source small animate-in-up">
                             <a class="link-small-underline" href="#0" target="_blank">Moon Light</a>
                             agency
@@ -1696,20 +1675,6 @@
                       <!-- tools single item -->
                       <div class="tools-cards__item d-flex grid-item animate-card-4">
                         <div class="tools-cards__card">
-                          <img class="tools-cards__icon animate-in-up" src="img/icons/icon-scketch.svg" alt="Tools Icon">
-                          <h6 class="tools-cards__caption tagline-tool animate-in-up">Sketch</h6>
-                        </div>
-                      </div>
-                      <!-- tools single item -->
-                      <div class="tools-cards__item d-flex grid-item animate-card-4">
-                        <div class="tools-cards__card">
-                          <img class="tools-cards__icon animate-in-up" src="img/icons/icon-blender.svg" alt="Tools Icon">
-                          <h6 class="tools-cards__caption tagline-tool animate-in-up">Blender</h6>
-                        </div>
-                      </div>
-                      <!-- tools single item -->
-                      <div class="tools-cards__item d-flex grid-item animate-card-4">
-                        <div class="tools-cards__card">
                           <img class="tools-cards__icon animate-in-up" src="img/icons/icon-html.svg" alt="Tools Icon">
                           <h6 class="tools-cards__caption tagline-tool animate-in-up">HTML5</h6>
                         </div>
@@ -1724,8 +1689,22 @@
                       <!-- tools single item -->
                       <div class="tools-cards__item d-flex grid-item animate-card-4">
                         <div class="tools-cards__card">
-                          <img class="tools-cards__icon animate-in-up" src="img/icons/icon-notion.svg" alt="Tools Icon">
-                          <h6 class="tools-cards__caption tagline-tool animate-in-up">Notion</h6>
+                          <img class="tools-cards__icon animate-in-up" src="img/icons/icon-after-effect.png" alt="Tools Icon">
+                          <h6 class="tools-cards__caption tagline-tool animate-in-up">After Effects</h6>
+                        </div>
+                      </div>
+                      <!-- tools single item -->
+                      <div class="tools-cards__item d-flex grid-item animate-card-4">
+                        <div class="tools-cards__card">
+                          <img class="tools-cards__icon animate-in-up" src="img/icons/icon-premier-pro.png" alt="Tools Icon">
+                          <h6 class="tools-cards__caption tagline-tool animate-in-up">Premier Pro</h6>
+                        </div>
+                      </div>
+                      <!-- tools single item -->
+                      <div class="tools-cards__item d-flex grid-item animate-card-4">
+                        <div class="tools-cards__card">
+                          <img class="tools-cards__icon animate-in-up" src="img/icons/icon-cinema-4d.png" alt="Tools Icon">
+                          <h6 class="tools-cards__caption tagline-tool animate-in-up">Cinema 4D</h6>
                         </div>
                       </div>
                     </div>
@@ -2202,8 +2181,7 @@
                                           </clipPath>
                                           <path class="mxd-cat" d="M29.2,30.8h2.5v2.5v2.5
                                             h-2.5v-2.5V30.8z M18.4,33.3v2.5h2.5v-2.5v-2.5h-2.5V33.3z M35,18.3v2.5h-2.5v-2.5H35z M30,23.3h2.5v-2.5H30V23.3z M25,23.3h-2.5
-                                            H20v2.5h2.5H25h2.5H30v-2.5h-2.5H25z M17.5,20.8v2.5H20v-2.5H17.5z M15,18.3v2.5h2.5v-2.5H15z M12.5,23.3v2.5v2.5H15v-2.5v-2.5
-                                            v-2.5h-2.5V23.3z M10,30.8v2.5H8.4H5.9v2.5h2.5v2.5H5.9v2.5h2.5v2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5h2.5h2.5v-2.5h-2.5h-2.5v-2.5
+                                            H20v2.5h2.5H25h2.5H30v-2.5h-2.5H25z M17.5,20.8v2.5H20v-2.5H17.5z M15,18.3v2.5h2.5v-2.5H15z M12.5,23.3v2.5v2.5H15v-2.5v-2.5v-2.5h-2.5V23.3z M10,30.8v2.5H8.4H5.9v2.5h2.5v2.5H5.9v2.5h2.5v2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5h2.5h2.5v-2.5h-2.5h-2.5v-2.5
                                             v-2.5v-2.5h1.7v-2.5v-2.5H10V30.8z M37.5,23.3v-2.5H35v2.5v2.5v2.5h2.5v-2.5V23.3z M44.2,35.8v-2.5h-2.5H40v-2.5v-2.5h-2.5v2.5v2.5
                                             h1.7v2.5v2.5v2.5h-2.5h-2.5v2.5h2.5h2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5v-2.5h2.5v-2.5h-2.5v-2.5H44.2z"/>
                                         </g>
@@ -2352,7 +2330,21 @@
     <script src="js/gallery-init.js"></script>
     <script src="js/app.js"></script>
     <!-- Load Scripts End -->
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+      tns({
+        container: '.my-tiny-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        controls: true,
+        nav: true,
+        mouseDrag: true,
+        controlsText: ['‹', '›'],
+        autoplayButtonOutput: false
+      });
+    </script>
   </body>
 
 </html>
