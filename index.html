@@ -1605,7 +1605,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                           <p class="resume-lines-number__date type-basic-160lh animate-in-up">2024</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I worked as a video editor for a company that needed a promotional demo to showcase their clinic management software. I created a clear and engaging video that highlighted the software’s main features and benefits, helping them communicate their value to potential clients.</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I worked as a video editor for a company that needed a promotional demo to showcase their clinic management software. I created a clear and engaging video that highlighted the software's main features and benefits, helping them communicate their value to potential clients.</p>
                           <p class="resume-lines-number__source small animate-in-up">
                             <a class="link-small-underline" href="#0" target="_blank">AlammoIT</a>
                           </p>
@@ -1626,7 +1626,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                           <p class="resume-lines-number__date type-basic-160lh animate-in-up">2025</p>
-                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I designed the new branding and logo for Programadores Argentina’s paid club on Instagram. The goal was to create a modern and recognizable visual identity that reflects the value of the exclusive content and benefits offered to members.</p>
+                          <p class="resume-lines-number__descr type-basic-160lh animate-in-up">I designed the new branding and logo for Programadores Argentina's paid club on Instagram. The goal was to create a modern and recognizable visual identity that reflects the value of the exclusive content and benefits offered to members.</p>
                           <p class="resume-lines-number__source small animate-in-up">
                             <a class="link-small-underline" href="#0" target="_blank">Moon Light</a>
                             agency
@@ -1733,15 +1733,15 @@
                             <div class="testimonials-card animate-in-up">
                               <div class="container-fluid p-0 fullheight-l">
                                 <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                                  <div class="col-12 col-lg-6 testimonials-card__tdata">
+                                  <div class="col-12 col-lg-12 testimonials-card__tdata">
                                     <div class="testimonials-card__tauthor d-flex">
                                       <div class="tauthor__avatar animate-in-up">
-                                        <img src="https://dummyimage.com/400x400/4d4d4d/636363" alt="Review Author">
+                                        <img src="/img/portfolio-images/logo-programadores-argentina.png" alt="Review Programadores Argentina">
                                       </div>
                                       <div class="tauthor__info d-flex flex-column justify-content-center">
-                                        <h4 class="tauthor__name animate-in-up">Alex Tomato</h4>
-                                        <p class="tauthor__position small animate-in-up">Brand Manager in 
-                                          <a class="link-small-underline" href="#">Instant Design</a>
+                                        <h4 class="tauthor__name animate-in-up">Juanse Mastrangelo</h4>
+                                        <p class="tauthor__position small animate-in-up">Fundador de la comunidad
+                                          <a class="link-small-underline" href="#">Programadores Argentina</a>
                                         </p>
                                         <div class="tauthor__rating d-flex animate-in-up">
                                           <i class="ph-fill ph-star"></i>
@@ -1753,21 +1753,18 @@
                                       </div>
                                     </div>
                                     <div class="testimonials-card__descr animate-in-up">
-                                      <p class="type-basic-160lh">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
-                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+                                      <p class="type-basic-160lh">
+                                        El logo del club de nuestra comunidad necesitaba representar a programadores y personas IT de la región, rocio logró capturar esa identidad desde lo visual con muchísima claridad. 
+                                        Además, nos acompañó en todo el proceso de crecimiento en redes sociales, aportando ideas, estrategia y criterio estético.
+                                         No solo ejecuta bien: escucha, entiende y propone. Su trabajo fue clave para que más gente se conecte con lo que hacemos.
+                                      </p>
                                     </div>
                                     <div class="testimonials-card__btnholder animate-in-up">
-                                      <a class="btn btn-line icon-right slide-right" href="#0">
+                                      <a class="btn btn-line icon-right slide-right" href="https://programadoresargentina.com" target="_blank">
                                         <span class="btn-caption">Project page</span>
                                         <i class="ph ph-arrow-right"></i>
                                       </a>
                                     </div>
-                                  </div>
-                                  <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                                    <div class="timage__inner fullheight-l animate-in-up">
-                                      <img src="https://dummyimage.com/1400x1200/4d4d4d/636363" alt="Testimonials Image">
-                                    </div>
-                                    
                                   </div>
                                 </div>
                               </div>
@@ -2332,8 +2329,14 @@
     <!-- Load Scripts End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
     <script>
-      tns({
+      // Primero inicializamos el tiny-slider
+      var slider = tns({
         container: '.my-tiny-slider',
         items: 1,
         slideBy: 'page',
@@ -2343,6 +2346,41 @@
         mouseDrag: true,
         controlsText: ['‹', '›'],
         autoplayButtonOutput: false
+      });
+
+      // Luego registramos ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // Animaciones para la sección Home
+      gsap.from(".headline__title .title__line", {
+        duration: 1,
+        y: 100,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power4.out"
+      });
+
+      // Animaciones para la sección Portfolio (excluyendo el slider)
+      gsap.from(".portfolio .content__block:not(.stack-wrapper)", {
+        scrollTrigger: {
+          trigger: ".portfolio",
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        },
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        stagger: 0.2
+      });
+
+      // Resto de las animaciones...
+      // [Mantener el resto de las animaciones igual que antes]
+
+      // Asegurarnos de que el slider se mantenga funcional
+      window.addEventListener('load', function() {
+        if (slider) {
+          slider.refresh();
+        }
       });
     </script>
   </body>
